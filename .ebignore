@@ -55,10 +55,3 @@ tsconfig.tsbuildinfo
 /cert/local-cert.pem
 /cert/local-key.pem
 /logs/
-
-# env
-.env.*
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
