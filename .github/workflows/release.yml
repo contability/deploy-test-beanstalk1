@@ -12,8 +12,8 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2 # 코드 check out: 프로젝트의 소스코드를 내려받는다.
 
-      - name: Install dependencies
-        run: npm install
+      #- name: Install dependencies
+      #run: npm install
 
       - name: Generate deployment package
         run: zip -r ${{ github.sha }}.zip . -x "*.git*" node_modules
