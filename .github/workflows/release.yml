@@ -16,7 +16,7 @@ jobs:
         run: zip -r ${{ github.sha }}.zip . -x "*.git*" node_modules
 
       - name: Deploy to EB
-        uses: contabilty/deploy-test-beanstalk1@v20
+        uses: contability/deploy-test-beanstalk1@v20
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
