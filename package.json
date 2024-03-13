@@ -8,9 +8,10 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "npm install && npm run build && eb deploy Deploy-test01-env"
+    "aws-eb:prod": "npm install && npm run build"
   },
   "dependencies": {
+    "express": "^4.18.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
