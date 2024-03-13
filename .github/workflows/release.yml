@@ -26,8 +26,8 @@ jobs:
           #aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_access_key: AKIA22THMBERC3BPHI7D
           aws_secret_key: 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
-          application_name: deploy-docker-test02
-          environment_name: Deploy-docker-test02-env
+          application_name: deploy-docker-test03
+          environment_name: Deploy-docker-test03-env
           version_label: ${{ github.sha }}
           version_description: ${{ github.event.head_commit.message }}
           existing_bucket_name: elasticbeanstalk-ap-southeast-2-744319879458
