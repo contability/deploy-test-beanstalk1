@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to EB
         #uses: contability/deploy-test-beanstalk1@main
-        uses: einaregilsson/beanstalk-deploy@v21
+        uses: einaregilsson/beanstalk-deploy@v22
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
