@@ -4,5 +4,8 @@ services:
     build:
       context: .
       dockerfile: dockerfile
+      # 원래 이렇게 써야하는데 s3에 올라간 소스 파일들 보니까 Dockerfile -> dockerfile로 소문자가 되어있더라
+      # 왜그런지 이유는 못찾았는데 일단 소문자로 해주니까 배포 성공.
+      #dockerfile: Dockerfile
     ports:
       - "80:80"
